@@ -25,9 +25,11 @@ public class FoodController {
     private FoodRepository repository;
 
     
-    @PostMapping("path")
+    @PostMapping()
     public void saveFood(@RequestBody FoodRequestDTO data){
-
+        Food foodData = new Food(data);
+        repository.save(foodData);
+        return;
     }
 
 
