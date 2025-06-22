@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @RestController
-@RequestMapping("/foods")
+@RequestMapping("/food")
 public class FoodController {
     @Autowired
     private FoodRepository repository;
